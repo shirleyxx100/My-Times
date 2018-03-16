@@ -1,5 +1,9 @@
 /* header */
 .header {
+  position: fixed;
+  background-color: white;
+  z-index: 5;
+  width: 95%;
   display: flex;
   border-bottom: 1px solid black;
   font-family: "Verdana", sans-serif;
@@ -8,6 +12,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 20px;
+  top: 0;
 }
 
 .logo {
@@ -41,6 +46,11 @@ main {
   display: flex;
   justify-content: space-around;
   margin: 20px;
+  position: relative;
+  top: 120px;
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
 }
 
 .column.large {
@@ -58,8 +68,51 @@ main {
   width: 240px;
 }
 
+.column.large.top {
+  display: flex;
+}
+
 .top,
 .middle,
 .bottom {
   border: 2px dotted red;
+}
+
+/* images */
+#mainimage {
+  background-image: url("../../resources/images/img-story-main.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  height: 300px;
+}
+
+#earth {
+  background-image: url("../../resources/images/img-story-2.png");
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  height: 300px;
+}
+
+#research {
+  background-image: url("../../resources/images/img-story-3.png");
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  height: 300px;
+}
+
+#cats {
+  background-image: url("../../resources/images/img-story-1.png");
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+  height: 300px;
+}
+
+#bite {
+  width: 100%;
 }
