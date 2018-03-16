@@ -72,14 +72,8 @@ main {
   display: flex;
 }
 
-.top,
-.middle,
-.bottom {
-  border: 2px dotted red;
-}
-
 /* images */
-#mainimage {
+#mother {
   background-image: url("../../resources/images/img-story-main.png");
   background-size: 100%;
   background-repeat: no-repeat;
