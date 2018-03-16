@@ -35,3 +35,31 @@ li {
 a {
   color: inherit;
 }
+
+/* main */
+main {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.column.large {
+  border: 2px dotted black;
+  width: 630px;
+}
+
+.column.medium {
+  border: 2px dotted black;
+  width: 300px;
+}
+
+.column.small {
+  border: 2px dotted black;
+  width: 240px;
+}
+
+.top,
+.middle,
+.bottom {
+  border: 2px dotted red;
+}
