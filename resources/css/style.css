@@ -44,13 +44,25 @@ a {
 /* main */
 main {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   margin: 20px;
   position: relative;
-  top: 120px;
+  top: 90px;
   font-family: Georgia;
   font-size: 17px;
   color: black;
+}
+
+/* border */
+
+.column {
+  flex-shrink: 0;
+  flex-grow: 0;
+  margin: 10px;
+}
+
+.story1 {
+  width: 630px;
 }
 
 .column.large {
@@ -68,8 +80,8 @@ main {
   width: 240px;
 }
 
-.column.large.top {
-  display: flex;
+.story {
+  border: 2px dotted red;
 }
 
 /* images */
