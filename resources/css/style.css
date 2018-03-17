@@ -1,3 +1,8 @@
+html,
+body {
+  height: 100%;
+}
+
 /* header */
 .header {
   position: fixed;
@@ -44,46 +49,24 @@ a {
 /* main */
 main {
   display: flex;
-  justify-content: center;
-  margin: 20px;
-  position: relative;
-  top: 90px;
+  background-color: orange;
   font-family: Georgia;
   font-size: 17px;
   color: black;
+  justify-content: space-between;
+  align-content: flex-start;
+  position: relative;
+  top: 90px;
 }
-
-/* border */
 
 .column {
-  flex-shrink: 0;
+  background-color: gray;
   flex-grow: 0;
-  margin: 10px;
+  flex-shrink: 0;
   display: flex;
   flex-wrap: wrap;
-  align-items: flex-start;
   align-content: flex-start;
-  text-align: center;
-}
-
-.story {
-  display: inline-flex;
-  flex-wrap: wrap;
-}
-
-.story1 {
-  width: 630px;
-}
-
-.story2 {
-  width: 310px;
-}
-
-.story3,
-.story4,
-.story5 {
-  min-width: 300px;
-  max-width: 310px;
+  justify-content: space-between;
 }
 
 .column.large {
@@ -98,41 +81,59 @@ main {
   width: 240px;
 }
 
-/* images */
-#mother {
-  background-image: url("../../resources/images/img-story-main.png");
-  background-size: 100%;
+.story {
+  background-color: snow;
+  background-size: cover;
   background-repeat: no-repeat;
+}
+
+.story.h2 {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.one {
+  background-image: url("../../resources/images/img-story-main.png");
+  font-weight: bold;
   font-size: 40px;
   color: white;
-  font-weight: bold;
-  height: 300px;
 }
 
-#earth {
+.five {
   background-image: url("../../resources/images/img-story-2.png");
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-  height: 300px;
 }
 
-#research {
+.six {
   background-image: url("../../resources/images/img-story-3.png");
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-  height: 300px;
 }
 
-#cats {
+.eight {
   background-image: url("../../resources/images/img-story-1.png");
-  font-weight: bold;
-  font-size: 30px;
-  color: white;
-  height: 300px;
 }
 
-#bite {
+.ten {
+  background-image: url("../../resources/images/img-news-bite.png");
+}
+
+.one,
+.two {
   width: 100%;
+}
+
+.three,
+.four,
+.five,
+.six {
+  width: 300px;
+}
+
+.five,
+.six,
+.eight {
+  color: white;
+}
+
+.eleven {
+  font-size: 16px;
+  font-weight: bold;
 }
