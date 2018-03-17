@@ -168,3 +168,30 @@ main {
   border-bottom: 1px solid black;
   padding: 15px 20px;
 }
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  background-color: MediumAquamarine;
+  position: relative;
+  top: 140px;
+  background-color: MediumAquamarine;
+  margin: auto;
+  font-family: Verdana;
+  font-size: 12px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.footertop {
+  display: inline-flex;
+}
+
+.footerlogo {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
